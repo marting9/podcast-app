@@ -156,6 +156,7 @@
     width: 1440px;
     display: flex;
     flex-direction: row;        
+    
 }
 .grid-item{
     height: 364px;
