@@ -7,10 +7,16 @@
     height: 3810px;
     width: 1440px;
     display: flex;
-    flex-direction: column;
-    border: 1px dashed gray;
+    flex-direction: column;        
     margin: 0 auto;
+    -webkit-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
+    box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
 }
+/* 
+    - Inicio CSS Rules 
+    - Contenedor del header, logo y nav-bar 
+*/
 .header-container{
     height: 80px;
     width: 1440px;
@@ -27,7 +33,7 @@
     width: 400px;
     height: 28px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     margin-left: 722px;
 }
 .nav-bar-item{
@@ -37,6 +43,21 @@
     letter-spacing: 0;
     line-height: 28px;
 }
+.nav-bar-item:hover{
+    font-family: 'IBM Plex Mono Medium', monospace;
+    font-size: 16px;
+    color: #00F3BB;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+/* 
+    - Fin CSS Rules.
+    - Contenedor del header, logo y nav-bar 
+*/
+/*
+    - Inicio CSS Rules.
+    - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" 
+*/
 .presentation-container{
     height: 369px;
     width: 1440px;
@@ -44,14 +65,20 @@
     flex-direction: column;
     padding: 120px 200px 5px 200px;    
 }
-.title{
+.presentation-title{
     width: 1040px;
     height: 84px;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'IBM Plex Sans', sans-serif;
     font-size: 64px;
     color: #060A24;    
 }
-.sub-title{
+.strikethrough-text{
+    text-decoration: line-through;
+}
+.dot-blue{
+    color: blue;
+}
+.presentation-sub-title{
     width: 628px;
     height: 48px;
     font-family: 'IBM Plex Mono', monospace;
@@ -79,45 +106,79 @@
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);    
     color: #FFFFFF;
 }
+/* 
+    - Fin CSS Rules.
+    - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más"
+*/
+/*
+    - Inicio CSS Rules.
+    - Contenedor de episodios, Titulo, y episodios 
+*/
 .chapters-container{
     height: 1042.6px;
     width: 1440px;
     display: flex;
     flex-direction: column;
-    padding: 186px 0px 232.6px 0px;
-    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);    
+    position: relative;    
+    padding-bottom:232.6px;    
+}
+.chapters-background{
+    width: 1440px;
+    height: 1042.6px;    
+    position: absolute;    
+    top: 0px;
+    left: 0px;
+    background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%); 
+    clip-path: polygon(0% 150px, 100% 0%, 100% 80%, 0% 100%);
+    z-index: -1;
 }
 .chapters-title{
+    width: 209px;
+    height: 62px;    
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 48px;
     color: #FFFFFF;
     letter-spacing: 0;
     margin-left: 200px;
+    position: absolute;
+    top: 156px;
+    left: 100px;
 }
 .chapters-grid{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 26px 64px 233px 64px;
+    padding: 250px 64px 233px 64px;
 }
 .chapter{
     width: 584px;
     height: 232px;
-    margin-left: 36px;
-    margin-right: 36px;
-    margin-bottom: 72px;
+    margin: 0px 36px 72px 36px;    
 }
+/* 
+    - Fin CSS Rules.
+    - Contenedor de episodios, Titulo, y episodios 
+*/
+/*
+    - Inicio CSS Rules.
+    - Contenedor central, celular y texto "De donde venimos?" 
+*/
 .center-container{
     height: 491.4px;
     width: 1440px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
     padding: 20.4px 256px 0px 200px;   
+    position: relative;
 }
 .cellphone-image{
     width: 458px;
     height: 660px;
+    position: absolute;
+    top: -200px;
+    left: 200px;
 }
 .center-container-title{
     width: 399px;
@@ -136,6 +197,14 @@
     letter-spacing: 0;
     line-height: 24px;
 }
+/* 
+    - Fin CSS Rules.
+    - Contenedor central, celular y texto "De donde venimos?" 
+*/
+/*
+    - Inicio CSS Rules.
+    - Contenedor con el grid de imagenes "invitadas/os especiales" 
+*/
 .grid-container{
     height: 890px;
     width: 1440px;
@@ -150,18 +219,26 @@
     color: #060A24;
     letter-spacing: 0;
     margin-left: 200px;
+    margin-bottom: 36px;
 }
 .grid-row{
     height: 364px;
     width: 1440px;
     display: flex;
     flex-direction: row;        
-    
 }
 .grid-item{
     height: 364px;
     width: 480;      
 }
+/* 
+    - Fin CSS Rules.
+    - Contenedor con el grid de imagenes "invitadas/os especiales" 
+*/
+/*
+    - Inicio CSS Rules.
+    - Contenedor de topicos de la pagina
+*/
 .topics-title{
     width: 586px;
     height: 62px;
@@ -203,13 +280,28 @@
     text-align: center;
     margin-top: 29px;
 }
-.last-news{    
+/* 
+    - Fin CSS Rules.
+    - Contenedor de topicos de la pagina
+*/
+/*
+    - Inicio CSS Rules.
+    - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios"
+*/
+.last-news-container{    
     width: 1440px;
-    height: 518px;    
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    height: 518px;        
+    position: relative;    
+}
+.last-news-background{
+    width: 1440px;
+    height: 518px;        
+    position: absolute;
+    top:0px;
+    left:0px;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+    clip-path: polygon(0% 30%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: -1;
 }
 .last-news-text{    
     font-family: 'IBM Plex Sans', sans-serif;
@@ -226,6 +318,10 @@
     border: none;
     margin: 0px 548px 151px 547px;
 }
+.cta-listen:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);    
+    color: #FFFFFF;
+}
 .cta-listen-text{
     font-family: 'IBM Plex Mono Medium', monospace;
     font-size: 18px;
@@ -234,6 +330,14 @@
     text-align: center;
     line-height: 24px;
 }
+/* 
+    - Fin CSS Rules.
+    - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios"
+*/
+/*
+    - Inicio CSS Rules.
+    - Contenedor footer, Copyright y acceso a redes sociales
+*/
 .footer-container{
     height: 95px;
     width: 1440px;
@@ -241,17 +345,23 @@
     flex-direction: row;
     padding: 36px 100px 31px 100px;
 }
-.contact{    
+.footer-container-text{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 16px;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
+}
+.footer-container-contact{    
     width:232px;
     height:28px;    
     margin-left: 739px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
 }
-.social-icon{
-    width:18px;
-    height:28px;    
-
-    border: 1px dashed gray;
-}
+/*
+    - Fin CSS Rules.
+    - Contenedor footer, Copyright y acceso a redes sociales
+*/

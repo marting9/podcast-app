@@ -6,11 +6,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+        crossorigin="anonymous"
+    />    
     <title>Document</title>
 </head>
 <body>
     <div class="general-container">
+        <!--Contenedor del header, logo y nav-bar -->
         <div class="header-container">
             <img class="user" src="./images/logo.svg"/>
             <div class="nav-bar">
@@ -20,13 +24,15 @@
                 <div class="nav-bar-item">TÓPICOS</div>
             </div>
         </div>
+        <!--Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" -->
         <div class="presentation-container">
-            <div class="title">Hello world pale blue dot.</div>
-            <div class="sub-title">El portal de podcasts que explora el mundo de la programación y la tecnologia. Nuevos episodios, todos los jueves caad 15 dias.</div>
+            <div class="presentation-title">Hello <span class="strikethrough-text">world</span> pale blue dot <span class="dot-blue">.</span></div>
+            <div class="presentation-sub-title">El portal de podcasts que explora el mundo de la programación y la tecnologia. Nuevos episodios, todos los jueves cada 15 dias.</div>
             <button class="cta-more">CONOCÉ MÁS</button>
         </div>
-
+        <!--Contenedor de episodios, Titulo, y episodios -->
         <div class="chapters-container">
+            <div class="chapters-background"></div>
             <div class="chapters-title">Episodios</div>
             <div class="chapters-grid">
                 <img class="chapter" src="./images/embed1.png"/>
@@ -35,7 +41,7 @@
                 <img class="chapter" src="./images/embed4.png"/>                
             </div>
         </div>
-
+        <!--Contenedor central, celular y texto "De donde venimos?" -->
         <div class="center-container">
             <img class="cellphone-image" src="./images/phone.png"/>
             <div>
@@ -44,7 +50,7 @@
                     Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</div>
             </div>
         </div>
-
+        <!--Contenedor con el grid de imagenes "invitadas/os especiales" -->
         <div class="grid-container">
             <div class="grid-title">Invitadas/os estelares</div>
             <div class="grid-row">
@@ -58,7 +64,7 @@
                 <img class="grid-item" src="./images/susan-kare.png" />
             </div>
         </div>
-
+        <!--Contenedor de topicos de la pagina -->
         <div class="topics-title">Algunos de nuestros temas</div>
         <div class="topics-container">            
             <div class="topic-item">
@@ -78,21 +84,32 @@
                 <div class="topic-text">Seguridad informática</div>
             </div>
         </div>
-
-        <div class="last-news">
+        <!--Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios" -->
+        <div class="last-news-container">
+            <div class="last-news-background"></div>
             <div class="last-news-text">¿Querés las últimas novedades?</div>
             <button class="cta-listen cta-listen-text">ESCUCHÁ LOS EPISODIOS</button>
         </div>
-
+        <!--Contenedor footer, Copyright y acceso a redes sociales -->
         <div class="footer-container">
-            <span>© 2019— Hello blue pale dot </span>
-            <div class="contact">
-                <div class="social-icon"></div>
-                <div class="social-icon"></div>
-                <div class="social-icon"></div>
-                <div class="social-icon"></div>
-                <div class="social-icon"></div>
-            </div>
+            <span class="footer-container-text">© 2019— Hello blue pale dot </span>
+            <div class="footer-container-contact">
+                <span>                    
+                    <i class="fab fa-spotify"></i>
+                </span>
+                <span>                    
+                    <i class="fab fa-instagram"></i>
+                </span>
+                <span>                                        
+                    <i class="fab fa-twitter"></i>
+                </span>
+                <span>                    
+                    <i class="fab fa-facebook"></i>
+                </span>
+                <span>                    
+                    <i class="fab fa-telegram"></i>
+                </span>                
+            </div>            
         </div>
     </div>    
 </body>
