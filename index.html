@@ -14,17 +14,40 @@
 </head>
 <body>
     <div class="general-container">
-        <!--Contenedor del header, logo y nav-bar -->
+        <!--Contenedor del header, logo y nav-bar  -->
         <div class="header-container">
             <img class="user" src="./images/logo.svg"/>
-            <div class="nav-bar">
+            <div class="nav-bar-desktop">
                 <div class="nav-bar-item">EPISODIOS</div>
                 <div class="nav-bar-item">NOSOTROS</div>
                 <div class="nav-bar-item">ENTREVISTAS</div>
                 <div class="nav-bar-item">TÓPICOS</div>
             </div>
-        </div>
+            <!--
+            <div class="nav-bar-mobile">
+                <label for="navi-toggle" class="navigation-button">
+                  <img src="./images/icono-hamburguesa.svg" alt="" />
+                </label>
+                <input type="checkbox" id="navi-toggle" class="navigation-checkbox" />
+                <div class="menu-mobile">
+                    <div class="menu-mobile-item">
+                        EPISODIOS
+                    </div>
+                    <div class="menu-mobile-item">
+                        NOSOTROS
+                    </div>
+                    <div class="menu-mobile-item">
+                        ENTREVISTAS
+                    </div>
+                    <div class="menu-mobile-item">
+                        TOPICOS
+                    </div>
+                </div>
+            </div>
+            -->
+        </div>        
         <!--Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" -->
+            
         <div class="presentation-container">
             <div class="presentation-title">Hello <span class="strikethrough-text">world</span> pale blue dot <span class="dot-blue">.</span></div>
             <div class="presentation-sub-title">El portal de podcasts que explora el mundo de la programación y la tecnologia. Nuevos episodios, todos los jueves cada 15 dias.</div>
@@ -35,10 +58,18 @@
             <div class="chapters-background"></div>
             <div class="chapters-title">Episodios</div>
             <div class="chapters-grid">
-                <img class="chapter" src="./images/embed1.png"/>
-                <img class="chapter" src="./images/embed2.png"/>
-                <img class="chapter" src="./images/embed3.png"/>
-                <img class="chapter" src="./images/embed4.png"/>                
+                <div class="chapter">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/15S6YaXIdlZS134oFVKN6f" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="chapter">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3qodGOJ1mvzwhAwTLU824z" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="chapter">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/3FZKRP92RebY4tbR7MRw8o" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
+                <div class="chapter">
+                    <iframe src="https://open.spotify.com/embed-podcast/episode/407MV3S721JFEPBxnvXLnH" width="100%" height="100%" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                </div>
             </div>
         </div>
         <!--Contenedor central, celular y texto "De donde venimos?" -->
@@ -46,7 +77,7 @@
             <img class="cellphone-image" src="./images/phone.png"/>
             <div>
                 <div class="center-container-title">De dónde venimos</div>
-                <div class="center-container-content">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light. 
+                <div class="center-container-content">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</br></br> 
                     Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</div>
             </div>
         </div>

@@ -29,7 +29,7 @@
     height: 38px;
     margin-left: 100px;
 }
-.nav-bar{
+.nav-bar-desktop{
     width: 400px;
     height: 28px;
     display: flex;
@@ -273,7 +273,7 @@
 .topic-text{
     height: 32px;
     width: 220px;
-    font-family: 'IBM Plex Sans SemiBold', sans-serif;    
+    font-family: 'IBM Plex Sans Semi Bold', sans-serif;    
     font-size: 24px;
     color: #060A24;
     letter-spacing: 0;
@@ -365,3 +365,325 @@
     - Fin CSS Rules.
     - Contenedor footer, Copyright y acceso a redes sociales
 */
+
+@media screen and (max-width: 414px) {
+  /* Elementos de la version mobile */
+     .general-container{
+        height: 5130px;
+        width: 320px;        
+        margin: 0 auto;
+        -webkit-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
+        -moz-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
+        box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
+    }
+    .header-container{        
+        width: 320px;
+        height: 44px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;    
+    }
+    .user{
+        width: 24px;
+        height: 24px;
+        margin-left: 16px;
+    }
+    .nav-bar-desktop{
+        display: none;
+    }
+    .nav-bar-item{
+        display: none;
+    }
+    
+    .nav-bar-mobile{
+        width: 320px;
+        height: 224px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-right: 19px;
+        background-color: #0000EC;
+    }
+    /**/
+    .navigation-button {
+        height: 50px;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        user-select: none;
+        margin: 0 10px;
+    }
+    .menu-mobile-item {
+        height: 50px;
+        border: 1px solid black;
+    }
+    .menu-mobile-item:hover {
+        background-color: rgb(223, 223, 223);
+        color: rgb(240, 75, 124);
+    }
+    .navigation-checkbox:checked + .menu-mobile {
+        display: none;
+    }
+    .navigation-checkbox {
+        display: none;
+    }
+    .menu-mobile-item {
+        border: none;
+        background-color: #ff6978;
+        color: white;
+        padding: 20px 10px;
+        cursor: pointer;
+        transition: all 1s ease;
+    }
+/*
+    - Inicio CSS Rules.
+    - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" 
+*/
+    .presentation-container{        
+        width: 320px;
+        height: 303px;
+        display: flex;
+        flex-direction: column;
+        padding: 29px 16px 30px 16px;    
+    }
+    .presentation-title{
+        width: 260px;
+        height: 84px;        
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 16px;
+    }    
+    .presentation-sub-title{
+        width: 288px;
+        height: 66px;
+        font-size: 14px;        
+        line-height: 22px;
+    }
+    .cta-more{
+        width: 288px;
+        height: 48px;        
+        margin-top: 43px;
+    }
+    .cta-more-text{        
+        font-size: 16px;                        
+        line-height: 22px;
+        font-weight: bold;
+    }    
+    /* 
+        - Fin CSS Rules.
+        - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más"
+    */
+    /*
+        - Inicio CSS Rules.
+        - Contenedor de episodios, Titulo, y episodios 
+    */
+    .chapters-container{
+        width: 320px;
+        height: 1203.5px;        
+        position: relative;         
+        padding-bottom: 0px;
+    }
+    .chapters-background{
+        width: 320px;
+        height: 1203.5px;                 
+        clip-path: polygon(0% 32px, 100% 0%, 100% 1171.5px, 0% 100%);        
+    }
+    .chapters-title{
+        width: 157px;
+        height: 42px;            
+        font-size: 36px;
+        margin-left: 16px;        
+        position: absolute;
+        top: 64px;
+        left: 16px;
+    }
+    .chapters-grid{        
+        flex-direction: column;        
+        justify-content: center;
+        padding: 0px 0px 0px 0px;
+        margin-top: 127px;
+    }
+    .chapter{
+        width: 298px;
+        height: 225px;
+        margin: 0px 11px 5px 11px;
+    }
+    /* 
+        - Fin CSS Rules.
+        - Contenedor de episodios, Titulo, y episodios 
+    */
+    /*
+        - Inicio CSS Rules.
+        - Contenedor central, celular y texto "De donde venimos?" 
+    */
+    .center-container{        
+        width: 320px;
+        height: 850.5px;        
+        flex-direction: column;        
+        padding: 500px 16px 46px 16px;
+        position: relative;
+    }
+    .cellphone-image{
+        width: 340px;
+        height: 499px;
+        position: absolute;
+        top: -85px;
+        left: -10px;
+    }
+    .center-container-title{
+        width: 288px;
+        height: 84px;        
+        font-size: 36px;
+        line-height: 42px; 
+        margin-bottom: 8px;       
+    }
+    .center-container-content{
+        width: 288px;
+        height: 254px;            
+        font-size: 14px;        
+        line-height: 22px;
+    }
+    /* 
+        - Fin CSS Rules.
+        - Contenedor central, celular y texto "De donde venimos?" 
+    */
+
+    /*
+        - Inicio CSS Rules.
+        - Contenedor con el grid de imagenes "invitadas/os especiales" 
+    */
+    .grid-container{
+        width: 320px;
+        height: 1300px;        
+    }
+    .grid-title{
+        width: 288px;
+        height: 84px;        
+        font-size: 36px;
+        line-height: 42px;
+        margin-left: 16px;
+        margin-bottom: 14px;
+    }
+    .grid-row{
+        width: 320px;        
+        height: 486px;        
+        flex-direction: column;        
+    }
+    .grid-item{        
+        width: 320px;
+        height: 243px;
+    }
+    /* 
+        - Fin CSS Rules.
+        - Contenedor con el grid de imagenes "invitadas/os especiales" 
+    */
+    /*
+        - Inicio CSS Rules.
+        - Contenedor de topicos de la pagina
+    */
+    .topics-title{
+        width: 284px;
+        height: 84px;        
+        font-size: 36px;        
+        line-height: 42px;
+        margin-top: 48px;
+        margin-left: 16px;
+    }
+    .topics-container{        
+        width: 320px; 
+        height: 856px;        
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    .topic-item{
+        height: 165px;
+        width: 320px;        
+        flex-direction: column;   
+        justify-content: center;
+        align-items: center; 
+        margin-top: 37px;
+        margin-bottom: 12px;
+    }
+    .topic-icon{
+        height: 104px;
+        width: 104px;    
+    }
+    .topic-text{
+        width: 288px;
+        height: 32px;                
+        font-size: 24px;
+        text-align: center;
+        margin-top: 13px;
+    }
+    /* 
+        - Fin CSS Rules.
+        - Contenedor de topicos de la pagina
+    */
+    /*
+        - Inicio CSS Rules.
+        - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios"
+    */
+    .last-news-container{    
+        width: 320px;
+        height: 344px;        
+        position: relative;    
+    }
+    .last-news-background{
+        width: 320px;
+        height: 341px;        
+        position: absolute;        
+        clip-path: polygon(0% 32px, 100% 0%, 100% 100%, 0% 100%);
+        z-index: -1;
+    }
+    .last-news-text{            
+        font-size: 36px;        
+        line-height: 42px;
+        margin: 64px 16px 36px 16px;
+    }
+    .cta-listen{
+        width: 288px;
+        height: 48px;        
+        margin: 0px 16px 67px 16px;
+    }
+    .cta-listen-text{        
+        font-size: 16px;        
+        line-height: 22px;
+    }
+    /* 
+        - Fin CSS Rules.
+        - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios"
+    */
+    /*
+        - Inicio CSS Rules.
+        - Contenedor footer, Copyright y acceso a redes sociales
+    */
+    .footer-container{        
+        width: 320px;
+        height: 121px;        
+        flex-direction: column;
+        padding: 24px 45px 31px 45px;
+    }
+    .footer-container-text{        
+        font-size: 14px;        
+        line-height: 22px;
+        margin-bottom: 16px;
+    }
+    .footer-container-contact{    
+        width:232px;
+        height:28px;    
+        margin-left: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    /*
+        - Fin CSS Rules.
+        - Contenedor footer, Copyright y acceso a redes sociales
+    */
+} 
