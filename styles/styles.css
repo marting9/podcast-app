@@ -1,25 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
 }
-.general-container{
-    height: 3810px;
+.general-container{    
     width: 1440px;
+    height: 3810px;
     display: flex;
     flex-direction: column;        
     margin: 0 auto;
-    -webkit-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
-    -moz-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
     box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
+    -webkit-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
+    -moz-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);    
 }
-/* 
-    - Inicio CSS Rules 
-    - Contenedor del header, logo y nav-bar 
-*/
-.header-container{
-    height: 80px;
+/* - Inicio CSS Rules - Contenedor del header, logo y nav-bar */
+.header-container{    
     width: 1440px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     align-items: center;    
@@ -42,6 +41,7 @@
     color: #060A24;
     letter-spacing: 0;
     line-height: 28px;
+    text-decoration: none;
 }
 .nav-bar-item:hover{
     font-family: 'IBM Plex Mono Medium', monospace;
@@ -49,18 +49,21 @@
     color: #00F3BB;
     letter-spacing: 0;
     line-height: 28px;
+    text-decoration: line-through;
 }
-/* 
-    - Fin CSS Rules.
-    - Contenedor del header, logo y nav-bar 
-*/
-/*
-    - Inicio CSS Rules.
-    - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" 
-*/
-.presentation-container{
-    height: 369px;
+.nav-bar-item:active{    
+    color: rgba(6,10,36,0.56);
+    text-decoration: line-through;
+}
+.nav-bar-mobile{
+    display: none;
+}
+/* - Fin CSS Rules - Contenedor del header, logo y nav-bar */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" */
+.presentation-container{    
     width: 1440px;
+    height: 369px;
     display: flex;
     flex-direction: column;
     padding: 120px 200px 5px 200px;    
@@ -104,19 +107,14 @@
 }
 .cta-more:hover{
     background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);    
-    color: #FFFFFF;
+    color: #FFFFFF;    
 }
-/* 
-    - Fin CSS Rules.
-    - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más"
-*/
-/*
-    - Inicio CSS Rules.
-    - Contenedor de episodios, Titulo, y episodios 
-*/
-.chapters-container{
-    height: 1042.6px;
+/* - Fin CSS Rules - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor de episodios, Titulo, y episodios */
+.chapters-container{    
     width: 1440px;
+    height: 1042.6px;
     display: flex;
     flex-direction: column;
     position: relative;    
@@ -156,17 +154,12 @@
     height: 232px;
     margin: 0px 36px 72px 36px;    
 }
-/* 
-    - Fin CSS Rules.
-    - Contenedor de episodios, Titulo, y episodios 
-*/
-/*
-    - Inicio CSS Rules.
-    - Contenedor central, celular y texto "De donde venimos?" 
-*/
+/* - Fin CSS Rules - Contenedor de episodios, Titulo, y episodios */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor central, celular y texto "De donde venimos?" */
 .center-container{
-    height: 491.4px;
     width: 1440px;
+    height: 491.4px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -197,17 +190,12 @@
     letter-spacing: 0;
     line-height: 24px;
 }
-/* 
-    - Fin CSS Rules.
-    - Contenedor central, celular y texto "De donde venimos?" 
-*/
-/*
-    - Inicio CSS Rules.
-    - Contenedor con el grid de imagenes "invitadas/os especiales" 
-*/
-.grid-container{
-    height: 890px;
+/* - Fin CSS Rules - Contenedor central, celular y texto "De donde venimos?" */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor con el grid de imagenes "invitadas/os especiales" */
+.grid-container{    
     width: 1440px;
+    height: 890px;
     display: flex;
     flex-direction: column;        
 }
@@ -221,24 +209,27 @@
     margin-left: 200px;
     margin-bottom: 36px;
 }
-.grid-row{
-    height: 364px;
+.grid-row{    
     width: 1440px;
+    height: 364px;
     display: flex;
     flex-direction: row;        
 }
 .grid-item{
-    height: 364px;
-    width: 480;      
+    width: 480;
+    height: 364px;       
 }
-/* 
-    - Fin CSS Rules.
-    - Contenedor con el grid de imagenes "invitadas/os especiales" 
-*/
-/*
-    - Inicio CSS Rules.
-    - Contenedor de topicos de la pagina
-*/
+/* - Fin CSS Rules - Contenedor con el grid de imagenes "invitadas/os especiales" */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor de topicos de la pagina */
+.topics-container{    
+    width: 1440px; 
+    height: 426px;
+    display: flex;
+    flex-direction: column;    
+    padding-left: 200px;
+    padding-right: 200px;
+}
 .topics-title{
     width: 586px;
     height: 62px;
@@ -249,30 +240,26 @@
     margin-top: 64px;
     margin-left: 200px;
 }
-.topics-container{
-    height: 426px;
-    width: 1440px; 
+.topics-grid{
     display: flex;
-    flex-direction: row;    
-    padding-left: 200px;
-    padding-right: 200px;
+    flex-direction: row;
 }
-.topic-item{
-    height: 165px;
+.topic-item{    
     width: 1440px;
+    height: 165px;
     display: flex;
     flex-direction: column;   
     justify-content: center;
     align-items: center; 
     margin-top: 69px;    
 }
-.topic-icon{
-    height: 104px;
+.topic-icon{    
     width: 104px;    
+    height: 104px;
 }
-.topic-text{
-    height: 32px;
+.topic-text{    
     width: 220px;
+    height: 32px;
     font-family: 'IBM Plex Sans Semi Bold', sans-serif;    
     font-size: 24px;
     color: #060A24;
@@ -280,14 +267,9 @@
     text-align: center;
     margin-top: 29px;
 }
-/* 
-    - Fin CSS Rules.
-    - Contenedor de topicos de la pagina
-*/
-/*
-    - Inicio CSS Rules.
-    - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios"
-*/
+/* - Fin CSS Rules - Contenedor de topicos de la pagina */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios" */
 .last-news-container{    
     width: 1440px;
     height: 518px;        
@@ -330,17 +312,12 @@
     text-align: center;
     line-height: 24px;
 }
-/* 
-    - Fin CSS Rules.
-    - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios"
-*/
-/*
-    - Inicio CSS Rules.
-    - Contenedor footer, Copyright y acceso a redes sociales
-*/
-.footer-container{
-    height: 95px;
+/* - Fin CSS Rules - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios" */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor footer, Copyright y acceso a redes sociales */
+.footer-container{    
     width: 1440px;
+    height: 95px;
     display: flex;
     flex-direction: row;
     padding: 36px 100px 31px 100px;
@@ -361,16 +338,17 @@
     justify-content: space-around;
     align-items: center;
 }
-/*
-    - Fin CSS Rules.
-    - Contenedor footer, Copyright y acceso a redes sociales
-*/
-
-@media screen and (max-width: 414px) {
-  /* Elementos de la version mobile */
-     .general-container{
-        height: 5130px;
+.contact-icon{
+    color: black;
+}
+/* - Fin CSS Rules - Contenedor footer, Copyright y acceso a redes sociales */
+/*                                         */
+/*                                         */
+/* Inicio - Elementos de la versión mobile, resoluciones menores a 414px */
+@media screen and (max-width: 414px) {  
+     .general-container{        
         width: 320px;        
+        height: 5130px;
         margin: 0 auto;
         -webkit-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
         -moz-box-shadow: -1px 2px 5px 2px rgba(158,158,158,1);
@@ -394,54 +372,64 @@
     }
     .nav-bar-item{
         display: none;
-    }
-    
+    }    
     .nav-bar-mobile{
-        width: 320px;
-        height: 224px;
+        width: 261px;    
+        height: 44px;    
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-right: 19px;
-        background-color: #0000EC;
+        margin-right: 19px;      
+        position: relative;  
     }
-    /**/
-    .navigation-button {
-        height: 50px;
-        width: 50px;
+    .navigation-button{
+        width: 25px;
+        height: 25px;
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         user-select: none;
         margin: 0 10px;
+        position: absolute;
+        top: 10px;
+        left: 224px;                
+    }    
+    .navigation-checkbox{
+        display: none;        
+    }
+    .navigation-checkbox:checked + .menu-mobile {
+        display: none;        
+    }
+    .menu-mobile{
+        width: 320px;
+        height: 224px;
+        position: absolute;
+        top: 44px;
+        left: -40px;        
+        background-color: #0000EC;  
+        display: flex;              
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     .menu-mobile-item {
-        height: 50px;
-        border: 1px solid black;
+        height: 28px;
+        font-family: 'IBM Plex Mono', monospace;
+        font-size: 16px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        line-height: 28px;
+        margin: 16px 0px 24px 16px;
+        border: none;        
+        cursor: pointer;
+        transition: all 1s ease;
+        text-decoration: none;
     }
     .menu-mobile-item:hover {
         background-color: rgb(223, 223, 223);
-        color: rgb(240, 75, 124);
+        color: black;
     }
-    .navigation-checkbox:checked + .menu-mobile {
-        display: none;
-    }
-    .navigation-checkbox {
-        display: none;
-    }
-    .menu-mobile-item {
-        border: none;
-        background-color: #ff6978;
-        color: white;
-        padding: 20px 10px;
-        cursor: pointer;
-        transition: all 1s ease;
-    }
-/*
-    - Inicio CSS Rules.
-    - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" 
-*/
+/* - Inicio CSS Rules - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" */
     .presentation-container{        
         width: 320px;
         height: 303px;
@@ -465,21 +453,17 @@
     .cta-more{
         width: 288px;
         height: 48px;        
-        margin-top: 43px;
+        margin-top: 43px;        
     }
     .cta-more-text{        
         font-size: 16px;                        
         line-height: 22px;
         font-weight: bold;
     }    
-    /* 
-        - Fin CSS Rules.
-        - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más"
-    */
-    /*
-        - Inicio CSS Rules.
-        - Contenedor de episodios, Titulo, y episodios 
-    */
+
+/* - Fin CSS Rules - Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor de episodios, Titulo, y episodios */
     .chapters-container{
         width: 320px;
         height: 1203.5px;        
@@ -511,14 +495,9 @@
         height: 225px;
         margin: 0px 11px 5px 11px;
     }
-    /* 
-        - Fin CSS Rules.
-        - Contenedor de episodios, Titulo, y episodios 
-    */
-    /*
-        - Inicio CSS Rules.
-        - Contenedor central, celular y texto "De donde venimos?" 
-    */
+/* - Fin CSS Rules - Contenedor de episodios, Titulo, y episodios */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor central, celular y texto "De donde venimos?" */
     .center-container{        
         width: 320px;
         height: 850.5px;        
@@ -546,15 +525,9 @@
         font-size: 14px;        
         line-height: 22px;
     }
-    /* 
-        - Fin CSS Rules.
-        - Contenedor central, celular y texto "De donde venimos?" 
-    */
-
-    /*
-        - Inicio CSS Rules.
-        - Contenedor con el grid de imagenes "invitadas/os especiales" 
-    */
+/* - Fin CSS Rules - Contenedor central, celular y texto "De donde venimos?" */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor con el grid de imagenes "invitadas/os especiales" */
     .grid-container{
         width: 320px;
         height: 1300px;        
@@ -576,14 +549,18 @@
         width: 320px;
         height: 243px;
     }
-    /* 
-        - Fin CSS Rules.
-        - Contenedor con el grid de imagenes "invitadas/os especiales" 
-    */
-    /*
-        - Inicio CSS Rules.
-        - Contenedor de topicos de la pagina
-    */
+/* - Fin CSS Rules - Contenedor con el grid de imagenes "invitadas/os especiales" */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor de topicos de la pagina */
+    .topics-container{        
+        width: 320px; 
+        height: 950px;      
+        /*height: 856px;        */
+        flex-direction: column;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }    
     .topics-title{
         width: 284px;
         height: 84px;        
@@ -592,26 +569,21 @@
         margin-top: 48px;
         margin-left: 16px;
     }
-    .topics-container{        
-        width: 320px; 
-        height: 856px;        
+    .topics-grid{        
         flex-direction: column;
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-bottom: 30px;
     }
-    .topic-item{
-        height: 165px;
+    .topic-item{        
         width: 320px;        
+        height: 165px;
         flex-direction: column;   
         justify-content: center;
         align-items: center; 
         margin-top: 37px;
         margin-bottom: 12px;
     }
-    .topic-icon{
-        height: 104px;
+    .topic-icon{        
         width: 104px;    
+        height: 104px;
     }
     .topic-text{
         width: 288px;
@@ -620,14 +592,9 @@
         text-align: center;
         margin-top: 13px;
     }
-    /* 
-        - Fin CSS Rules.
-        - Contenedor de topicos de la pagina
-    */
-    /*
-        - Inicio CSS Rules.
-        - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios"
-    */
+/* - Fin CSS Rules - Contenedor de topicos de la pagina */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios" */
     .last-news-container{    
         width: 320px;
         height: 344px;        
@@ -654,14 +621,9 @@
         font-size: 16px;        
         line-height: 22px;
     }
-    /* 
-        - Fin CSS Rules.
-        - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios"
-    */
-    /*
-        - Inicio CSS Rules.
-        - Contenedor footer, Copyright y acceso a redes sociales
-    */
+/* - Fin CSS Rules - Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios" */
+/*                                         */
+/* - Inicio CSS Rules - Contenedor footer, Copyright y acceso a redes sociales */
     .footer-container{        
         width: 320px;
         height: 121px;        
@@ -682,8 +644,5 @@
         justify-content: space-around;
         align-items: center;
     }
-    /*
-        - Fin CSS Rules.
-        - Contenedor footer, Copyright y acceso a redes sociales
-    */
-} 
+/* - Fin CSS Rules - Contenedor footer, Copyright y acceso a redes sociales */
+}

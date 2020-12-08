@@ -4,13 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
         integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
         crossorigin="anonymous"
     />    
-    <title>Document</title>
+    <title>Podcast Channel</title>
 </head>
 <body>
     <div class="general-container">
@@ -18,43 +16,48 @@
         <div class="header-container">
             <img class="user" src="./images/logo.svg"/>
             <div class="nav-bar-desktop">
-                <div class="nav-bar-item">EPISODIOS</div>
-                <div class="nav-bar-item">NOSOTROS</div>
-                <div class="nav-bar-item">ENTREVISTAS</div>
-                <div class="nav-bar-item">TÓPICOS</div>
-            </div>
-            <!--
+                <div>
+                    <a class="nav-bar-item" href="#chapters">EPISODIOS</a>
+                </div>
+                <div>
+                    <a class="nav-bar-item" href="#about-us">NOSOTROS</a>
+                </div>
+                <div>
+                    <a class="nav-bar-item" href="#interviews">ENTREVISTAS</a>
+                </div>
+                <div>
+                    <a class="nav-bar-item" href="#topics">TOPICOS</a>
+                </div>
+            </div>            
             <div class="nav-bar-mobile">
                 <label for="navi-toggle" class="navigation-button">
-                  <img src="./images/icono-hamburguesa.svg" alt="" />
+                  <img src="./images/icono-hamburguesa.svg" alt="hamburguer-menu" />
                 </label>
                 <input type="checkbox" id="navi-toggle" class="navigation-checkbox" />
                 <div class="menu-mobile">
-                    <div class="menu-mobile-item">
-                        EPISODIOS
+                    <div>
+                        <a class="menu-mobile-item" href="#chapters">EPISODIOS</a>
                     </div>
-                    <div class="menu-mobile-item">
-                        NOSOTROS
+                    <div>                        
+                        <a class="menu-mobile-item" href="#about-us">NOSOTROS</a>
                     </div>
-                    <div class="menu-mobile-item">
-                        ENTREVISTAS
+                    <div>                        
+                        <a class="menu-mobile-item" href="#interviews">ENTREVISTAS</a>
                     </div>
-                    <div class="menu-mobile-item">
-                        TOPICOS
+                    <div>
+                        <a class="menu-mobile-item" href="#topics">TOPICOS</a>                        
                     </div>
                 </div>
-            </div>
-            -->
+            </div>            
         </div>        
-        <!--Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" -->
-            
+        <!--Contenedor de presentación, Titulo, subtitulo y call to action "Conocé más" -->            
         <div class="presentation-container">
             <div class="presentation-title">Hello <span class="strikethrough-text">world</span> pale blue dot <span class="dot-blue">.</span></div>
             <div class="presentation-sub-title">El portal de podcasts que explora el mundo de la programación y la tecnologia. Nuevos episodios, todos los jueves cada 15 dias.</div>
             <button class="cta-more">CONOCÉ MÁS</button>
         </div>
         <!--Contenedor de episodios, Titulo, y episodios -->
-        <div class="chapters-container">
+        <div id="chapters" class="chapters-container">
             <div class="chapters-background"></div>
             <div class="chapters-title">Episodios</div>
             <div class="chapters-grid">
@@ -73,8 +76,8 @@
             </div>
         </div>
         <!--Contenedor central, celular y texto "De donde venimos?" -->
-        <div class="center-container">
-            <img class="cellphone-image" src="./images/phone.png"/>
+        <div id="about-us" class="center-container">
+            <img class="cellphone-image" src="./images/phone.png" alt="Cellphone image"/>
             <div>
                 <div class="center-container-title">De dónde venimos</div>
                 <div class="center-container-content">Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</br></br> 
@@ -82,37 +85,39 @@
             </div>
         </div>
         <!--Contenedor con el grid de imagenes "invitadas/os especiales" -->
-        <div class="grid-container">
+        <div id="interviews" class="grid-container">
             <div class="grid-title">Invitadas/os estelares</div>
             <div class="grid-row">
-                <img class="grid-item" src="./images/grace-hopper.png" />
-                <img class="grid-item" src="./images/Katie-Bouman.png" />
-                <img class="grid-item" src="./images/Margaret_Hamilton.png" />
+                <img class="grid-item" src="./images/grace-hopper.png" alt="Grace Hopper"/>
+                <img class="grid-item" src="./images/Katie-Bouman.png" alt="Katie Bouman"/>
+                <img class="grid-item" src="./images/Margaret_Hamilton.png" alt="Margaret Hamilton"/>
             </div>
             <div class="grid-row">
-                <img class="grid-item" src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" />
-                <img class="grid-item" src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" />
-                <img class="grid-item" src="./images/susan-kare.png" />
+                <img class="grid-item" src="./images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="E.R.A.AUnivac 1103"/>
+                <img class="grid-item" src="./images/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer Operators"/>
+                <img class="grid-item" src="./images/susan-kare.png" alt="Susan Kare"/>
             </div>
         </div>
-        <!--Contenedor de topicos de la pagina -->
-        <div class="topics-title">Algunos de nuestros temas</div>
-        <div class="topics-container">            
-            <div class="topic-item">
-                <img class="topic-icon" src="./images/icon1.svg"/>
-                <div class="topic-text">Trabajo remoto</div>
-            </div>
-            <div class="topic-item">
-                <img class="topic-icon" src="./images/icon2.svg"/>                
-                <div class="topic-text">Repensando la programación</div>
-            </div>
-            <div class="topic-item">
-                <img class="topic-icon" src="./images/icon3.svg"/>                
-                <div class="topic-text">Bases del código</div>
-            </div>
-            <div class="topic-item">
-                <img class="topic-icon" src="./images/icon4.svg"/>                
-                <div class="topic-text">Seguridad informática</div>
+        <!--Contenedor de topicos de la pagina -->        
+        <div id="topics" class="topics-container">            
+            <div class="topics-title">Algunos de nuestros temas</div>
+            <div class="topics-grid">
+                <div class="topic-item">
+                    <img class="topic-icon" src="./images/icon1.svg" alt="Remote work"/>
+                    <div class="topic-text">Trabajo remoto</div>
+                </div>
+                <div class="topic-item">
+                    <img class="topic-icon" src="./images/icon2.svg" alt="Programming"/>                
+                    <div class="topic-text">Repensando la programación</div>
+                </div>
+                <div class="topic-item">
+                    <img class="topic-icon" src="./images/icon3.svg" alt="Code Base"/>                
+                    <div class="topic-text">Bases del código</div>
+                </div>
+                <div class="topic-item">
+                    <img class="topic-icon" src="./images/icon4.svg" alt="Security"/>                
+                    <div class="topic-text">Seguridad informática</div>
+                </div>
             </div>
         </div>
         <!--Contenedor de la seccion "Ultimas novedades", call to action "Escuchá los episodios" -->
@@ -126,19 +131,19 @@
             <span class="footer-container-text">© 2019— Hello blue pale dot </span>
             <div class="footer-container-contact">
                 <span>                    
-                    <i class="fab fa-spotify"></i>
+                    <a class="contact-icon" href="https://www.spotify.com/ar/"><i class="fab fa-spotify"></i></a>
                 </span>
                 <span>                    
-                    <i class="fab fa-instagram"></i>
+                    <a class="contact-icon" href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
                 </span>
                 <span>                                        
-                    <i class="fab fa-twitter"></i>
+                    <a class="contact-icon" href="https://twitter.com/?lang=es"><i class="fab fa-twitter"></i></a>
                 </span>
                 <span>                    
-                    <i class="fab fa-facebook"></i>
+                    <a class="contact-icon" href="https://es-la.facebook.com/"><i class="fab fa-facebook"></i></a>
                 </span>
                 <span>                    
-                    <i class="fab fa-telegram"></i>
+                    <a class="contact-icon" href="https://web.telegram.org/"><i class="fab fa-telegram"></i></a>
                 </span>                
             </div>            
         </div>
